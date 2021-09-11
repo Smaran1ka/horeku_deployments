@@ -23,9 +23,9 @@ def predict():
 
     output = model.predict([[preg,plas,pres,skin,test,mass,pedi,age]])
     if output[0]== 1 :
-        ans='dibatic'
+        ans ='dibatic'
     else:
-        ans'not dibatic'
+        ans = 'not dibatic'
     return render_template('home.html,person is {ans}')
 
 
