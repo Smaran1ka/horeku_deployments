@@ -22,7 +22,7 @@ def predict():
     age = request.form.get('age')
 
     output = model.predict([[preg,plas,pres,skin,test,mass,pedi,age]])
-    if output== 1 :
+    if output[0]== 1 :
         print('dibatic')
     else:
         print('not dibatic')
