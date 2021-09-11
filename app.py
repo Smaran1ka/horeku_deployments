@@ -26,7 +26,7 @@ def predict():
         ans='dibatic'
     else:
         ans'not dibatic'
-    return render_template('home.html,person is (ans)')
+    return render_template('home.html,person is {ans}')
 
 
 #run the app
