@@ -1,4 +1,4 @@
-from sys import getfilesystemencodeerrors
+# from sys import getfilesystemencodeerrors
 from flask import Flask, render_template, request
 # from test import Abc
 import joblib
@@ -33,5 +33,5 @@ def predict():
 
 #run the app
 if __name__ =='__main__':
-    app.run(debug=True)
+    app.run()
 
