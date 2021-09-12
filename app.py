@@ -1,3 +1,4 @@
+from sys import getfilesystemencodeerrors
 from flask import Flask, render_template, request
 # from test import Abc
 import joblib
@@ -5,6 +6,7 @@ import joblib
 # initialise the app
 app = Flask(__name__)
 model = joblib.load('dib_79.pkl')
+print('[INFO] model loaded')
 
 @app.route('/')
 def hello_word():
